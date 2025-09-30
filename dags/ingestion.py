@@ -1,16 +1,9 @@
-import os
-import re
 import csv
-import sqlite3
 import io
-from typing import List, Tuple
 from datetime import datetime
 
 from airflow.decorators import dag, task
 from airflow.utils.dates import days_ago
-from airflow.models import Variable
-from airflow.operators.python import get_current_context
-from airflow.providers.amazon.aws.transfers.s3_to_sql import S3ToSqlOperator
 from airflow.operators.bash import BashOperator
 
 from utils import get_bucket
@@ -25,7 +18,7 @@ from utils import get_bucket
     catchup=False,
 )
 def open_meteo_ingestion():
-    # 4DkQ3qHHZxTJHeORFYAzouH8KXjv6ameZW9Q8Q/X
+
     @task
     def find_latest_success_path() -> str:
         """Find the most recent path that contains a .success file"""

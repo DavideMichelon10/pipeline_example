@@ -1,7 +1,7 @@
 import os
 import json
 import csv
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timezone
 
 import requests
 from airflow.decorators import dag, task
