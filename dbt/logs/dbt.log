@@ -1,0 +1,118 @@
+[0m18:07:21.673934 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1037212b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1047847f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1047849d0>]}
+
+
+============================== 18:07:21.676778 | d087d7c4-b36d-4108-8314-f14e38e511a9 ==============================
+[0m18:07:21.676778 [info ] [MainThread]: Running with dbt=1.10.13
+[0m18:07:21.677128 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/Users/davide/.dbt', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'log_format': 'default', 'log_path': 'logs', 'use_colors': 'True', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'no_print': 'None', 'fail_fast': 'False', 'partial_parse': 'True', 'debug': 'False', 'write_json': 'True', 'invocation_command': 'dbt init openmeteo', 'version_check': 'True', 'printer_width': '80', 'use_experimental_parser': 'False', 'quiet': 'False', 'target_path': 'None', 'empty': 'None', 'warn_error': 'None'}
+[0m18:07:21.684905 [info ] [MainThread]: Creating dbt configuration folder at /Users/davide/.dbt
+[0m18:07:21.685874 [debug] [MainThread]: Starter project path: /Users/davide/Library/Python/3.9/lib/python/site-packages/dbt/include/starter_project
+[0m18:07:21.690705 [info ] [MainThread]: 
+Your new dbt project "openmeteo" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m18:07:21.691058 [info ] [MainThread]: Setting up your profile.
+[0m18:09:57.598012 [info ] [MainThread]: Profile openmeteo written to /Users/davide/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m18:09:57.601843 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 155.97678, "process_in_blocks": "0", "process_kernel_time": 0.09387, "process_mem_max_rss": "99909632", "process_out_blocks": "0", "process_user_time": 0.808525}
+[0m18:09:57.602630 [debug] [MainThread]: Command `dbt init` succeeded at 18:09:57.602478 after 155.98 seconds
+[0m18:09:57.603213 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1037212b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10473a5b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10406a640>]}
+[0m18:09:57.603825 [debug] [MainThread]: Flushing usage events
+[0m18:09:58.113856 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:17:15.666096 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10576d2b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1067d27f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1067d29d0>]}
+
+
+============================== 18:17:15.669444 | c9689647-fcb1-42de-b62e-27518eeac05d ==============================
+[0m18:17:15.669444 [info ] [MainThread]: Running with dbt=1.10.13
+[0m18:17:15.669820 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'indirect_selection': 'eager', 'introspect': 'True', 'use_colors': 'True', 'write_json': 'True', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'profiles_dir': '/Users/davide/.dbt', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'warn_error': 'None', 'empty': 'None', 'printer_width': '80', 'log_format': 'default', 'quiet': 'False', 'log_path': 'logs', 'no_print': 'None', 'debug': 'False', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'log_cache_events': 'False', 'cache_selected_only': 'False'}
+[0m18:17:15.677491 [info ] [MainThread]: dbt version: 1.10.13
+[0m18:17:15.677789 [info ] [MainThread]: python version: 3.9.6
+[0m18:17:15.678023 [info ] [MainThread]: python path: /Library/Developer/CommandLineTools/usr/bin/python3
+[0m18:17:15.678247 [info ] [MainThread]: os info: macOS-14.7.8-arm64-arm-64bit
+[0m18:17:15.714153 [info ] [MainThread]: Using profiles dir at /Users/davide/.dbt
+[0m18:17:15.714508 [info ] [MainThread]: Using profiles.yml file at /Users/davide/.dbt/profiles.yml
+[0m18:17:15.714701 [info ] [MainThread]: Using dbt_project.yml file at /Users/davide/Documents/ETL_test/dbt/dbt_project.yml
+[0m18:17:15.715063 [info ] [MainThread]: adapter type: postgres
+[0m18:17:15.715251 [info ] [MainThread]: adapter version: 1.9.1
+[0m18:17:15.715444 [info ] [MainThread]: Configuration:
+[0m18:17:15.715608 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:17:15.715772 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m18:17:15.715939 [info ] [MainThread]: Required dependencies:
+[0m18:17:15.716158 [debug] [MainThread]: Executing "git --help"
+[0m18:17:15.735062 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:17:15.735792 [debug] [MainThread]: STDERR: "b''"
+[0m18:17:15.736065 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:17:15.736290 [info ] [MainThread]: Connection:
+[0m18:17:15.736559 [info ] [MainThread]:   host: openmeteo.cv02os2gwcrz.eu-central-1.rds.amazonaws.com
+[0m18:17:15.736751 [info ] [MainThread]:   port: 5432
+[0m18:17:15.736930 [info ] [MainThread]:   user: postgres
+[0m18:17:15.737089 [info ] [MainThread]:   database: openmeteo
+[0m18:17:15.737247 [info ] [MainThread]:   schema: analytics
+[0m18:17:15.737406 [info ] [MainThread]:   connect_timeout: 10
+[0m18:17:15.737567 [info ] [MainThread]:   role: None
+[0m18:17:15.737728 [info ] [MainThread]:   search_path: None
+[0m18:17:15.737886 [info ] [MainThread]:   keepalives_idle: 0
+[0m18:17:15.738049 [info ] [MainThread]:   sslmode: None
+[0m18:17:15.738207 [info ] [MainThread]:   sslcert: None
+[0m18:17:15.738364 [info ] [MainThread]:   sslkey: None
+[0m18:17:15.738523 [info ] [MainThread]:   sslrootcert: None
+[0m18:17:15.738683 [info ] [MainThread]:   application_name: dbt
+[0m18:17:15.738840 [info ] [MainThread]:   retries: 1
+[0m18:17:15.739339 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m18:17:15.818208 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m18:17:15.845658 [debug] [MainThread]: Using postgres connection "debug"
+[0m18:17:15.846025 [debug] [MainThread]: On debug: select 1 as id
+[0m18:17:15.846215 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:17:16.073675 [debug] [MainThread]: SQL status: SELECT 1 in 0.227 seconds
+[0m18:17:16.074490 [debug] [MainThread]: On debug: Close
+[0m18:17:16.074961 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m18:17:16.075228 [info ] [MainThread]: [31m1 check failed:[0m
+[0m18:17:16.075432 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/davide/Documents/ETL_test/dbt/dbt_project.yml> not found
+
+[0m18:17:16.076792 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.4606501, "process_in_blocks": "0", "process_kernel_time": 0.152224, "process_mem_max_rss": "116523008", "process_out_blocks": "0", "process_user_time": 0.900469}
+[0m18:17:16.077226 [debug] [MainThread]: Command `dbt debug` failed at 18:17:16.077146 after 0.46 seconds
+[0m18:17:16.077484 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m18:17:16.077728 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10576d2b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ae4fa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ae4550>]}
+[0m18:17:16.078030 [debug] [MainThread]: Flushing usage events
+[0m18:17:16.579018 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:13:23.859858 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff86826190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff86826550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff86826410>]}
+
+
+============================== 15:13:23.862713 | 9feea3be-e7b9-42db-8da0-5bad658bc349 ==============================
+[0m15:13:23.862713 [info ] [MainThread]: Running with dbt=1.10.13
+[0m15:13:23.863095 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': '.', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run --profiles-dir .', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:13:23.863549 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /usr/local/airflow/dbt/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m15:13:23.864483 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8ba2fa90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff86826190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8b8cf750>]}
+[0m15:13:23.864802 [debug] [MainThread]: Flushing usage events
+[0m15:13:24.322544 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:13:34.794592 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7b206190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7e0cc790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7b26a0d0>]}
+
+
+============================== 15:13:34.796392 | 59f2092f-f119-419d-930f-153c5342576c ==============================
+[0m15:13:34.796392 [info ] [MainThread]: Running with dbt=1.10.13
+[0m15:13:34.796915 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': '.', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run --profiles-dir .', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:13:34.797478 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /usr/local/airflow/dbt/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m15:13:34.798097 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff7b270990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff803c39d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xffff8025f750>]}
+[0m15:13:34.798623 [debug] [MainThread]: Flushing usage events
+[0m15:13:35.251905 [debug] [MainThread]: An error was encountered while trying to flush usage events

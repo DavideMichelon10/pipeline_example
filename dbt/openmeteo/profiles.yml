@@ -1,0 +1,13 @@
+
+openmeteo:
+  outputs:
+    dev:
+      dbname: openmeteo
+      host: openmeteo.cv02os2gwcrz.eu-central-1.rds.amazonaws.com
+      pass: postgres
+      port: 5432
+      schema: analytics
+      threads: 1
+      type: postgres
+      user: postgres
+  target: dev
