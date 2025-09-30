@@ -31,7 +31,7 @@ def load_data(limit: Optional[int] = 1000) -> pd.DataFrame:
     engine = get_db_engine()
     query = """
         select time, temperature_2m, relativehumidity_2m, city
-        from analytics_staging.stg_deduplicated_data
+        from analytics.stg_deduplicated_data
         order by time asc
     """
     if limit is not None:
@@ -58,12 +58,12 @@ def main() -> None:
         st.stop()
 
     if df.empty:
-        st.warning("No data found in analytics_staging.stg_deduplicated_data")
+        st.warning("No data found in analytics.stg_deduplicated_data")
         return
 
     # City filter
     cities = sorted(df["city"].dropna().unique().tolist())
-    selected_cities = st.multiselect("City", options=cities, default=cities[:5] if cities else [])
+    selected_cities = st.multiselect("City", options=cities, default=cities[:1] if cities else [])
     if selected_cities:
         df = df[df["city"].isin(selected_cities)]
 

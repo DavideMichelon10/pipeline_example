@@ -59,12 +59,12 @@ def open_meteo_extraction():
         resp = requests.get(url, params=params, timeout=30)
         resp.raise_for_status()
         data = resp.json()
-
         fetched_at = datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')
         raw_path = os.path.join(f'open_meteo_raw_{fetched_at}.json')
         with open(raw_path, 'w') as f:
             json.dump(data, f)
         
+        print(f"data: {data}")
         csv_path = os.path.join(f"{city}.csv")
         hourly = data.get('hourly', {})
         times = hourly.get('time', [])
@@ -99,9 +99,8 @@ def open_meteo_extraction():
 
 
     @task
-    def upload_success() -> dict:
+    def upload_success(**ctx) -> dict:
         from airflow.providers.amazon.aws.hooks.s3 import S3Hook
-        ctx = get_current_context()
         start_dt = ctx['data_interval_start']
         end_dt = ctx['data_interval_end']
         bucket, prefix = get_bucket_and_prefix(start_dt, end_dt)
@@ -112,7 +111,7 @@ def open_meteo_extraction():
 
     
     lat_long = get_lat_long()
-    fetch_raw.expand_kwargs(lat_long) >> upload_success()
+    fetch_raw.override(pool="cities").expand_kwargs(lat_long) >> upload_success()
 
 
 open_meteo_extraction = open_meteo_extraction()

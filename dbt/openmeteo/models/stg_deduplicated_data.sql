@@ -1,6 +1,5 @@
 {{ config(
     materialized='table',
-    schema='staging'
 ) }}
 
 WITH ranked_data AS (

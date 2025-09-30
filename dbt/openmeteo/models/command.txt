@@ -1,0 +1,4 @@
+docker cp /Users/davide/Documents/pipeline_example/dbt/openmeteo/models/ aws-mwaa-local-runner-2_10-local-runner-1:/usr/local/airflow/dbt/models/
+
+
+pip install --upgrade dbt-core dbt-postgres
