@@ -93,6 +93,9 @@ streamlit run app.py
 
 Apri il browser all’indirizzo indicato da Streamlit (tipicamente `http://localhost:8501`). Se la connessione al DB fallisce, verifica le variabili in `.env` e la raggiungibilità del database.
 
+### 3.3 Screenshot UI
+![Screenshot interfaccia FE](./screen_UI.png)
+
 ---
 
 ## 4) Struttura del repository (parziale)
